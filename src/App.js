@@ -109,10 +109,96 @@ const AdmitScoreApp = () => {
   ];
 
   const majors = [
-    'Computer Science', 'Engineering', 'Business', 'Biology', 'Psychology',
-    'Economics', 'Political Science', 'Mathematics', 'Physics', 'Chemistry',
-    'English', 'History', 'Nursing', 'Pre-Med', 'Communications',
-    'Data Science', 'Environmental Science', 'Neuroscience', 'Philosophy', 'Art'
+    // STEM Majors
+    'Computer Science', 'Computer Engineering', 'Software Engineering', 'Information Technology',
+    'Data Science', 'Artificial Intelligence', 'Cybersecurity', 'Information Systems',
+    'Electrical Engineering', 'Mechanical Engineering', 'Civil Engineering', 'Chemical Engineering',
+    'Aerospace Engineering', 'Biomedical Engineering', 'Industrial Engineering', 'Environmental Engineering',
+    'Materials Science', 'Nuclear Engineering', 'Petroleum Engineering', 'Agricultural Engineering',
+    'Mathematics', 'Applied Mathematics', 'Statistics', 'Actuarial Science',
+    'Physics', 'Applied Physics', 'Astrophysics', 'Geophysics',
+    'Chemistry', 'Biochemistry', 'Chemical Physics', 'Pharmaceutical Sciences',
+    'Biology', 'Molecular Biology', 'Microbiology', 'Marine Biology', 'Ecology',
+    'Biotechnology', 'Genetics', 'Bioinformatics', 'Neuroscience', 'Neurobiology',
+    'Environmental Science', 'Environmental Studies', 'Sustainability Studies',
+    'Geology', 'Earth Sciences', 'Meteorology', 'Oceanography',
+    'Architecture', 'Landscape Architecture', 'Urban Planning',
+    
+    // Health Sciences
+    'Pre-Medicine', 'Pre-Dental', 'Pre-Veterinary', 'Pre-Pharmacy', 'Pre-Physical Therapy',
+    'Nursing', 'Public Health', 'Health Sciences', 'Health Administration',
+    'Kinesiology', 'Exercise Science', 'Sports Medicine', 'Athletic Training',
+    'Nutrition', 'Dietetics', 'Food Science', 'Speech Pathology',
+    'Occupational Therapy', 'Respiratory Therapy', 'Radiologic Sciences',
+    'Medical Laboratory Science', 'Clinical Laboratory Science',
+    
+    // Business & Economics
+    'Business Administration', 'Business Management', 'International Business',
+    'Finance', 'Accounting', 'Economics', 'Applied Economics',
+    'Marketing', 'Digital Marketing', 'Brand Management',
+    'Management Information Systems', 'Supply Chain Management', 'Operations Management',
+    'Entrepreneurship', 'Human Resources Management', 'Organizational Leadership',
+    'Real Estate', 'Risk Management', 'Business Analytics',
+    'Hospitality Management', 'Tourism Management', 'Event Management',
+    'Sports Management', 'Healthcare Management',
+    
+    // Social Sciences
+    'Psychology', 'Clinical Psychology', 'Cognitive Science', 'Behavioral Science',
+    'Sociology', 'Anthropology', 'Archaeology', 'Cultural Studies',
+    'Political Science', 'International Relations', 'Public Policy', 'Public Administration',
+    'Economics', 'Social Work', 'Criminal Justice', 'Criminology',
+    'Geography', 'Urban Studies', 'Gender Studies', "Women's Studies",
+    'African American Studies', 'Asian Studies', 'Latin American Studies', 'Middle Eastern Studies',
+    
+    // Humanities & Liberal Arts
+    'English', 'English Literature', 'Creative Writing', 'Professional Writing',
+    'History', 'Art History', 'American Studies', 'Classical Studies',
+    'Philosophy', 'Ethics', 'Religious Studies', 'Theology',
+    'Linguistics', 'Comparative Literature', 'Foreign Languages',
+    'Spanish', 'French', 'German', 'Italian', 'Chinese', 'Japanese', 'Arabic', 'Russian',
+    
+    // Communication & Media
+    'Communications', 'Mass Communications', 'Strategic Communications',
+    'Journalism', 'Broadcast Journalism', 'Digital Journalism',
+    'Public Relations', 'Advertising', 'Media Studies',
+    'Film Studies', 'Film Production', 'Television Production',
+    'Digital Media', 'Multimedia Design', 'Game Design',
+    
+    // Arts & Design
+    'Fine Arts', 'Studio Art', 'Painting', 'Sculpture', 'Ceramics',
+    'Graphic Design', 'Visual Communications', 'Illustration',
+    'Photography', 'Fashion Design', 'Interior Design', 'Industrial Design',
+    'Animation', 'Digital Arts', 'Web Design', 'UX/UI Design',
+    
+    // Performing Arts
+    'Music', 'Music Performance', 'Music Education', 'Music Theory', 'Music Composition',
+    'Theatre', 'Theatre Arts', 'Acting', 'Musical Theatre', 'Technical Theatre',
+    'Dance', 'Choreography', 'Dance Education',
+    
+    // Education
+    'Education', 'Elementary Education', 'Secondary Education', 'Special Education',
+    'Early Childhood Education', 'Physical Education', 'Music Education', 'Art Education',
+    'Educational Leadership', 'Curriculum and Instruction', 'Educational Psychology',
+    
+    // Law & Legal Studies
+    'Pre-Law', 'Legal Studies', 'Paralegal Studies', 'Constitutional Law',
+    
+    // Agriculture & Natural Resources
+    'Agriculture', 'Agricultural Business', 'Agricultural Science', 'Agronomy',
+    'Animal Science', 'Veterinary Science', 'Equine Studies',
+    'Forestry', 'Wildlife Management', 'Fisheries Science', 'Range Science',
+    'Horticulture', 'Plant Science', 'Soil Science',
+    
+    // Other Professional Fields
+    'Library Science', 'Museum Studies', 'Archival Studies',
+    'Aviation', 'Aeronautics', 'Aviation Management',
+    'Culinary Arts', 'Baking and Pastry Arts',
+    'Fashion Merchandising', 'Retail Management',
+    'Construction Management', 'Project Management',
+    'Human Development', 'Family Studies', 'Child Development',
+    'Gerontology', 'Recreation Management', 'Parks and Recreation',
+    'Military Science', 'National Security Studies', 'Intelligence Studies',
+    'Undecided/Exploratory'
   ];
 
   const usStates = [
@@ -363,7 +449,7 @@ const AdmitScoreApp = () => {
               <div className="mt-4 flex justify-center gap-4 text-sm text-gray-500 flex-wrap">
                 <span className="flex items-center gap-1">
                   <Target className="w-4 h-4" />
-                  Predictive & Prescriptive Analytics
+                  Predictive Analytics
                 </span>
                 <span className="flex items-center gap-1">
                   <TrendingUp className="w-4 h-4" />
